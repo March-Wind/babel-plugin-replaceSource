@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "outDir": "./lib/",
+        "sourceMap": false, // ts变成js文件时，同时生成sourceMap文件
+        "noImplicitAny": false, // 当this标识的值是any类型时报错
+        "module": "CommonJS",
+        "target": "es5", // 运行环境
+        // "jsx": "preserve", //在preserve模式下生成代码中会保留JSX以供后续的转换操作使用（比如：Babel）
+        "jsx": "react", //在preserve模式下生成代码中会保留JSX以供后续的转换操作使用（比如：Babel）
+        "allowJs": true, //允许编译js文件,在js文件检查类型是用的类型推断
+        "checkJs": true, //徐云检查js文件
+        // "strict": true, //严格模式:有any会报错；严格的非空检查null和undefined不是所有类型的子类型；this为any报错；严格模式‘use strict’
+        "noEmitOnError": true, //编译过程中报错就停止编译
+        "moduleResolution": "node", // 模块解析规则,模块路径查找相关
+        "allowSyntheticDefaultImports": true,
+        // "resolveJsonModule": true, // 支持引入json
+        "experimentalDecorators": true, // 支持装饰器
+        "lib": [
+          "es2019"
+        ]
+    },
+    "exclude": [
+      "node_modules/**/*",
+      "bin/**/*"
+  ],
+  }
